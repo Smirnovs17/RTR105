@@ -10,4 +10,4 @@ uname -a - informācija par lietotāju
 burts>Tab - ļauj dabut sarakstus
 history - komandas vēsture
 ls -a - ļauj uzzināt informāciju par failiem
-q - ļauj izziet no MAN komandai
+q - ļauj izziet no "man" komandas
