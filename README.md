@@ -9,5 +9,5 @@ man + jebkura komanda - ļauj uzzināt informāciju par šo komandu
 uname -a - informācija par lietotāju
 burts>Tab - ļauj dabut sarakstus
 history - komandas vēsture
-ls -a - ļauj uzzināt informāciju par failiem
+ls -a - ļauj uzzināt informāciju par fajliem
 q - ļauj izziet no "man" komandas
