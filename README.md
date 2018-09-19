@@ -11,3 +11,6 @@ burts>Tab - ļauj dabut sarakstus
 history - komandas vēsture
 ls -a - ļauj uzzināt informāciju par failiem
 q - ļauj izziet no "man" komandas
+mkdir- ļauj uztaisit jaunu mapi
+echo- ļauj parvietot datus uz citiem failiem
+cd- ļauj ienakt uz directoriju
