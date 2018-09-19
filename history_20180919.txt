@@ -50,3 +50,15 @@
    50  chmod 764 git-upload
    51  ls -l
    52  history > history_20180919.txt
+   53  ls -l
+   54  ./git-upload 
+   55  ./git-upload 20180919_09_50
+   56  nano git-upload
+   57  ./git-upload 20180919_09_50
+   58  python
+   59  ipython
+   60  idle
+   61  idle &
+   62  pwd
+   63  ls -l
+   64  history > history_20180919.txt
