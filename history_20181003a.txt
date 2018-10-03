@@ -1,0 +1,33 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  pwd
+    4  cd RTR105
+    5  pwd
+    6  cd RTR105/
+    7  ls -l
+    8  cd RTR105
+    9  idle &
+   10  ls
+   11  RTR105
+   12  pwd
+   13  cd RTR105
+   14  ls -l
+   15  cd /RTR105
+   16  history
+   17  pwd
+   18  git clone https://github.com/Smirnovs17/RTR105
+   19  cd RTR105
+   20  pwd
+   21  ls -l
+   22  ls
+   23  history
+   24  history > history_20181003a.txt
+   25  nano README.md
+   26  cd~
+   27  pwd
+   28  cd home/
+   29  cd home
+   30  pwd
+   31  cd -
+   32  history
+   33  history > history_20181003a.txt
