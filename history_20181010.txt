@@ -1,0 +1,52 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  firefox &
+    4  idle &
+    5  pwd
+    6  git clone https://github.com/Smirnovs17/RTR105
+    7  pwd
+    8  ls -l
+    9  cd RTR105
+   10  pwd
+   11  ./git-upload
+   12  pwd
+   13  ./git-upload
+   14  nano README.md
+   15  cd home
+   16  cd~
+   17  pwd
+   18  cd /home
+   19  pwd
+   20  cd RTR105
+   21  cd /RTR105
+   22  pwd
+   23  cd
+   24  pwd
+   25  ./git-upload
+   26  /git-upload
+   27  cd RTR105
+   28  ./git-upload
+   29  pwd
+   30  ls -l
+   31  git-upload
+   32  ./git-upload
+   33  /git-upload
+   34  .git-upload
+   35  git clone https://github.com/Smirnovs17/RTR105
+   36  nano ./git-upload
+   37  history
+   38  cd
+   39  pwd
+   40  ls -l
+   41  cd RTR105
+   42  ./git-upload 20181010_09_48
+   43  history
+   44  cd
+   45  history
+   46  history > history 20181010.txt
+   47  cd RTR105
+   48  history > history 20181010.txt
+   49  history > history20181010.txt
+   50  history > history_20181010.txt
+   51  cd
+   52  history > history_20181010.txt
