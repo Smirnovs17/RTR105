@@ -1,0 +1,8 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  firefox &
+    4  idle &
+    5  nano dgr_20181024.py
+    6  ls -l
+    7  history
+    8  history > history_20181024.txt
