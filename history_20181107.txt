@@ -1,0 +1,12 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  firefox &
+    4  git clone https://github.com/Smirnovs17/RTR105
+    5  cd RTR105
+    6  nano sin_caur_summu_ver4.py
+    7  ls - l
+    8  ls -l
+    9  nano sin_caur_summu_ver5.py
+   10  nano sin_caur_summu_ver6.py
+   11  history
+   12  history > history_20181107.txt
