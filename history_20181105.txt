@@ -1,0 +1,11 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  firefox &
+    4  git clone https://github.com/Smirnovs17/RTR105
+    5  nano shifreeshana.txt
+    6  ssh -X x181REB326@213.175.92.22
+    7  history > history_2018_11_05.txt
+    8  history > history_20181105_09_50
+    9  ./git-upload 20181105_09_50
+   10  ./git-upload
+   11  history > history_20181105.txt
