@@ -15,3 +15,12 @@ mkdir- ļauj uztaisit jaunu mapi
 echo- ļauj parvietot datus uz citiem failiem
 cd- ļauj ienakt uz directoriju
 Ctrl+Shift+T - ļauj atvert vel vienu Shell valodas logu
+whoami - nosaukums ar kuru jūs esiet iekšā sistēmai
+ls - failu saraksts sekojoša kotalogā
+rm - nodzest failu vai kotalogu
+rmdir - nodest tukšu failu
+mv - nosaukt vai pārvietot failu
+nano - izveidot jaunu mapi
+python - startēt Python vidi
+ipython - startēt Ipython vidi
+idle & - startēt Idle vidi
