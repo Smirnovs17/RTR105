@@ -14,3 +14,4 @@ q - ļauj izziet no "man" komandas
 mkdir- ļauj uztaisit jaunu mapi
 echo- ļauj parvietot datus uz citiem failiem
 cd- ļauj ienakt uz directoriju
+Ctrl+Shift+T - ļauj atvert vel vienu Shell valodas logu
