@@ -1,0 +1,149 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>M&#275;rijumu datu apstrade</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-02-15"><meta name="DC.source" content="lab1_demo.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>M&#275;rijumu datu apstrade</h1><!--introduction--><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Darba m&#275;r&#311;i</a></li><li><a href="#2">ievadisim eksperementalus datus:</a></li></ul></div><h2 id="1">Darba m&#275;r&#311;i</h2><div><ul><li>Iepaz&#299;tirs ar merijumu apstrades pamatiem</li><li>Iemacities pielietot apgutas zina&#353;anas priek&#353;metos, kur ir nepiecie&#353;ama merijumu datu apstrade(fizika, ETP)</li><li>Iepazities veidot atskaites ar Matlab palidzibu</li></ul></div><h2 id="2">ievadisim eksperementalus datus:</h2><pre class="codeinput">Um = [-1 0.3 1.5 2.5 3.2]
+Im = [1.1 2.2 2.1 3.2 4.7]
+<span class="comment">% pame&#291;inesim uzzimet grafiku</span>
+plot(Um,Im,<span class="string">'o-'</span>)<span class="comment">% neder jo ir lauzta linija</span>
+<span class="comment">% me&#291;enasim atrast matematisku sakarribu kas sasaista tos punktus</span>
+<span class="comment">%sakribu meklrsim polinomiala veida</span>
+<span class="comment">% saksim ar 2.kartas polinomu</span>
+<span class="comment">% y = C1*x^2+C2*x+C3</span>
+
+<span class="comment">%funkcija kas atdot polinoma koeficentus saucas polyfit(polynomal</span>
+<span class="comment">%fitting)sintekse:</span>
+<span class="comment">% C = polyfit(x,y,N), N - polinoma karta</span>
+<span class="comment">% C polinoma koeficenti ko atdaris polyfit</span>
+C = polyfit(Um,Im,1)
+<span class="comment">% esam atradu&#353;i koeficentus lai uzzimetu panemsim x ar mazaku soli</span>
+U = -1:0.01:3.2;
+<span class="comment">% jare&#311;ina polinoms</span>
+<span class="comment">%I = C(1)*U.^3+C(2)*U.^2+C(3)*U+C(4)</span>
+<span class="comment">%to var automatizet ar funkciju polyval</span>
+I = polyval(C,U);
+<span class="comment">%uzzimesim</span>
+plot(Um,Im,<span class="string">'o'</span>,U,I)
+<span class="comment">%%Secinajumi:</span>
+<span class="comment">% ko es iemacijos &#353;aja darba, secinajumi nedrikst sakrist arkole&#291;u</span>
+<span class="comment">% secinajumiem</span>
+<span class="comment">%3-4. teikumi</span>
+<span class="comment">%kad viss ir gatavs - veidosim pdf atskaiti janospie&#382; publish-publish</span>
+</pre><pre class="codeoutput">
+Um =
+
+   -1.0000    0.3000    1.5000    2.5000    3.2000
+
+
+Im =
+
+    1.1000    2.2000    2.1000    3.2000    4.7000
+
+
+C =
+
+    0.7434    1.6936
+
+</pre><img vspace="5" hspace="5" src="lab1_demo_01.png" alt=""> <p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Mērijumu datu apstrade
+%% Darba mērķi
+% * Iepazītirs ar merijumu apstrades pamatiem
+% * Iemacities pielietot apgutas zinašanas priekšmetos, kur ir nepieciešama
+% merijumu datu apstrade(fizika, ETP)
+% * Iepazities veidot atskaites ar Matlab palidzibu
+%% ievadisim eksperementalus datus:
+Um = [-1 0.3 1.5 2.5 3.2]
+Im = [1.1 2.2 2.1 3.2 4.7]
+% pameģinesim uzzimet grafiku
+plot(Um,Im,'o-')% neder jo ir lauzta linija
+% meģenasim atrast matematisku sakarribu kas sasaista tos punktus
+%sakribu meklrsim polinomiala veida 
+% saksim ar 2.kartas polinomu
+% y = C1*x^2+C2*x+C3
+
+%funkcija kas atdot polinoma koeficentus saucas polyfit(polynomal
+%fitting)sintekse:
+% C = polyfit(x,y,N), N - polinoma karta
+% C polinoma koeficenti ko atdaris polyfit
+C = polyfit(Um,Im,1)
+% esam atraduši koeficentus lai uzzimetu panemsim x ar mazaku soli
+U = -1:0.01:3.2;
+% jareķina polinoms
+%I = C(1)*U.^3+C(2)*U.^2+C(3)*U+C(4)
+%to var automatizet ar funkciju polyval
+I = polyval(C,U);
+%uzzimesim
+plot(Um,Im,'o',U,I)
+%%Secinajumi:
+% ko es iemacijos šaja darba, secinajumi nedrikst sakrist arkoleģu
+% secinajumiem
+%3-4. teikumi
+%kad viss ir gatavs - veidosim pdf atskaiti janospiež publish-publish
+
+##### SOURCE END #####
+--></body></html>
